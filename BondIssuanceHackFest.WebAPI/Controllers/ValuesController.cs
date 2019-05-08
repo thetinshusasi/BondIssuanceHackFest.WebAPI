@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BondIssuanceHackFest.WebAPI.BondIssuance.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,10 +10,17 @@ namespace BondIssuanceHackFest.WebAPI.Controllers
 {
     public class ValuesController : ApiController
     {
+        private readonly ITest _test;
         // GET api/values
+
+         public ValuesController(ITest test)
+        {
+            _test = test;
+        }
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            var data = new string[] { "value1", "value2" , _test.FullName };
+            return data;
         }
 
         // GET api/values/5
