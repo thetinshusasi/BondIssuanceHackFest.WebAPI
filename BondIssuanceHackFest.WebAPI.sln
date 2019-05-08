@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondIssuanceHackFest.WebAPI", "BondIssuanceHackFest.WebAPI\BondIssuanceHackFest.WebAPI.csproj", "{6BFAE500-C9CC-4048-8005-76451894A65E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondIssuanceHackFest.DAL", "BondIssuanceHackFest.DAL\BondIssuanceHackFest.DAL.csproj", "{38A44C1C-6BCC-4F12-82D2-213B4B654DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondIssuanceHackFest.BLL", "BondIssuanceHackFest.BLL\BondIssuanceHackFest.BLL.csproj", "{3A919A7C-7D49-4A80-9B14-35F64F837046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondIssuanceHackFest.SmartContracts", "BondIssuanceHackFest.SmartContracts\BondIssuanceHackFest.SmartContracts.csproj", "{578BB6FF-B01D-4765-9829-989B6E7AECC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondIssuanceHackFest.Netherum", "BondIssuanceHackFest.Netherum\BondIssuanceHackFest.Netherum.csproj", "{DF4D250A-408C-4BBD-BD66-EA848F392E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondIssuanceHackFest.Common", "BondIssuanceHackFest.Common\BondIssuanceHackFest.Common.csproj", "{40F97355-0D71-4ADA-8191-E27ADD562ECA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{6BFAE500-C9CC-4048-8005-76451894A65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BFAE500-C9CC-4048-8005-76451894A65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BFAE500-C9CC-4048-8005-76451894A65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A44C1C-6BCC-4F12-82D2-213B4B654DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A44C1C-6BCC-4F12-82D2-213B4B654DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A44C1C-6BCC-4F12-82D2-213B4B654DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A44C1C-6BCC-4F12-82D2-213B4B654DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A919A7C-7D49-4A80-9B14-35F64F837046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A919A7C-7D49-4A80-9B14-35F64F837046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A919A7C-7D49-4A80-9B14-35F64F837046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A919A7C-7D49-4A80-9B14-35F64F837046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578BB6FF-B01D-4765-9829-989B6E7AECC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578BB6FF-B01D-4765-9829-989B6E7AECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578BB6FF-B01D-4765-9829-989B6E7AECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578BB6FF-B01D-4765-9829-989B6E7AECC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4D250A-408C-4BBD-BD66-EA848F392E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4D250A-408C-4BBD-BD66-EA848F392E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4D250A-408C-4BBD-BD66-EA848F392E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4D250A-408C-4BBD-BD66-EA848F392E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F97355-0D71-4ADA-8191-E27ADD562ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F97355-0D71-4ADA-8191-E27ADD562ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F97355-0D71-4ADA-8191-E27ADD562ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F97355-0D71-4ADA-8191-E27ADD562ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
