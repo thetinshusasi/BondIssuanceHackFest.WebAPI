@@ -19,22 +19,28 @@ namespace BondIssuanceHackFest.WebAPI.Controllers
         private readonly IQuorumUserRepository _quorumUserRepository;
         private readonly IQuorumNodeRepository _quorumNodeRepository;
         private readonly DbContext _dbContext;
+        private readonly IContractRepository _contractRepository;
         // GET api/values
 
 
-        public ValuesController(DbContext dbContext, IBondRepository bondRepository, IQuorumUserRepository quorumUserRepository)
+        public ValuesController(DbContext dbContext, 
+            IBondRepository bondRepository,
+            IQuorumUserRepository quorumUserRepository,
+             IContractRepository contractRepository)
         {
             _bondRepository = bondRepository;
             _quorumUserRepository = quorumUserRepository;
             _quorumUserRepository = quorumUserRepository;
             _dbContext = dbContext;
+            _contractRepository = contractRepository;
+
         }
         public IEnumerable<string> Get()
         {
             var data = new string[] { "value1", "value2", _test.FullName };
             var quorumConnector = new QuorumConnectionBuider(_quorumUserRepository, _quorumNodeRepository, _dbContext);
             quorumConnector.BuildQuorumUserAddress();
-            var contractConnector = new ContractConnectionBuider();
+            var contractConnector = new ContractConnectionBuider(_contractRepository, _dbContext);
             contractConnector.DeploySols();
             var d = _bondRepository.GetAll();
             return data;

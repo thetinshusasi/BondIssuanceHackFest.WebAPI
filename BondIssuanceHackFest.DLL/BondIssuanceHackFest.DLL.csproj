@@ -104,29 +104,13 @@
     <Compile Include="IRepositories\IContractRepository.cs" />
     <Compile Include="IRepositories\IQuorumNodeRepository.cs" />
     <Compile Include="IRepositories\IQuorumUserRepository.cs" />
-    <Compile Include="Migrations\201905092353453_Intial.cs" />
-    <Compile Include="Migrations\201905092353453_Intial.Designer.cs">
-      <DependentUpon>201905092353453_Intial.cs</DependentUpon>
+    <Compile Include="Migrations\201905102221062_11-05-2019-2.cs" />
+    <Compile Include="Migrations\201905102221062_11-05-2019-2.Designer.cs">
+      <DependentUpon>201905102221062_11-05-2019-2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905101457040_prabhat.cs" />
-    <Compile Include="Migrations\201905101457040_prabhat.Designer.cs">
-      <DependentUpon>201905101457040_prabhat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905101507115_10-5-2019-1.cs" />
-    <Compile Include="Migrations\201905101507115_10-5-2019-1.Designer.cs">
-      <DependentUpon>201905101507115_10-5-2019-1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905101630209_10-05-2019-2.cs" />
-    <Compile Include="Migrations\201905101630209_10-05-2019-2.Designer.cs">
-      <DependentUpon>201905101630209_10-05-2019-2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905101645586_10-05-2019-4.cs" />
-    <Compile Include="Migrations\201905101645586_10-05-2019-4.Designer.cs">
-      <DependentUpon>201905101645586_10-05-2019-4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905102206019_11-05-2019-1.cs" />
-    <Compile Include="Migrations\201905102206019_11-05-2019-1.Designer.cs">
-      <DependentUpon>201905102206019_11-05-2019-1.cs</DependentUpon>
+    <Compile Include="Migrations\201905102235582_11-05-2019-3.cs" />
+    <Compile Include="Migrations\201905102235582_11-05-2019-3.Designer.cs">
+      <DependentUpon>201905102235582_11-05-2019-3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bid.cs" />
@@ -149,23 +133,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905092353453_Intial.resx">
-      <DependentUpon>201905092353453_Intial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905102221062_11-05-2019-2.resx">
+      <DependentUpon>201905102221062_11-05-2019-2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905101457040_prabhat.resx">
-      <DependentUpon>201905101457040_prabhat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905101507115_10-5-2019-1.resx">
-      <DependentUpon>201905101507115_10-5-2019-1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905101630209_10-05-2019-2.resx">
-      <DependentUpon>201905101630209_10-05-2019-2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905101645586_10-05-2019-4.resx">
-      <DependentUpon>201905101645586_10-05-2019-4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905102206019_11-05-2019-1.resx">
-      <DependentUpon>201905102206019_11-05-2019-1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905102235582_11-05-2019-3.resx">
+      <DependentUpon>201905102235582_11-05-2019-3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
