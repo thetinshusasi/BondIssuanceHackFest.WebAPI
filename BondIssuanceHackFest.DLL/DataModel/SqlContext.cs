@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BondIssuanceHackFest.DLL.DataModel
+namespace BondIssuanceHackFest.DLL.DataModels
 {
     public class SqlContext : DbContext
     {
@@ -16,5 +16,11 @@ namespace BondIssuanceHackFest.DLL.DataModel
         }
         
         public DbSet<Bond> Bonds { get; set; }
+
+        public DbSet<Bid> Bids { get; set; }
+
+        public DbSet<Wallet> Wallets { get; set; }
+
+        public DbSet<Investor> Investors { get; set; }
     }
 }

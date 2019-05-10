@@ -1,0 +1,3 @@
+Data Source=nwmblockchain.database.windows.net;Initial Catalog=BondIssuingDb;User ID=rootadmin;Password=********;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+
+Password  nwmblockchain@123
