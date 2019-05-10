@@ -21,7 +21,6 @@ namespace BondIssuanceHackFest.DLL.DataModels
 
         public string InvesterType { get; set; }
 
-        public Wallet Wallet { get; set; }
 
         public Bond Bond { get; set; }
 
