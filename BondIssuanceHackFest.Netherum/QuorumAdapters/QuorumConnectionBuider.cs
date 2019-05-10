@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Nethereum.Web3;
+using Nethereum.Quorum;
 using Nethereum.ABI.FunctionEncoding.Attributes;
 using Nethereum.Contracts.CQS;
 using Nethereum.Util;
@@ -12,30 +9,57 @@ using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.Contracts;
 using Nethereum.Contracts.Extensions;
 using System.Numerics;
+using System.Threading.Tasks;
+using System.Net.WebSockets;
+using Nethereum.Web3.Accounts.Managed;
+using Nethereum.Contracts.ContractHandlers;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
+using BondIssuanceHackFest.DLL.IRepositories;
+using System.Linq;
+using System.Data.Entity;
 
 namespace BondIssuanceHackFest.Netherum.QuorumAdapters
 {
-    public class QuorumConnector
+    public class QuorumConnectionBuider
     {
-        
-        public List<string> ConvertSolsToByteCodeStrings()
-        {
-            List<string> byteCodes = new List<string>();
-            var currDir = Directory.GetCurrentDirectory();
-            DirectoryInfo d = new DirectoryInfo(System.Web.Hosting.HostingEnvironment.MapPath("~/Content/Contracts/bin"));
-            FileInfo[] files = d.GetFiles("*.bin");
-            if (files.Count() > 0)
-            {
-                foreach(var file in files)
-                {
-                    byte[] bytes = File.ReadAllBytes(file.FullName);
-                    byteCodes.Add(System.Text.Encoding.UTF8.GetString(bytes));
-                }
-            }
-            return byteCodes;
+        private readonly IQuorumUserRepository _quorumUserRepository;
+        private readonly IQuorumNodeRepository _quorumNodeRepository;
+        private readonly DbContext _dbContext;
 
+        public QuorumConnectionBuider(IQuorumUserRepository quorumUserRepository,
+            IQuorumNodeRepository quorumNodeRepository,
+            DbContext dbContext)
+        {
+            _quorumUserRepository = quorumUserRepository;
+            _quorumNodeRepository = quorumNodeRepository;
+            _dbContext = dbContext;
         }
+        public static async Task<string> asyncCreateAccount(Web3Quorum web3Private)
+        {
+            return await web3Private.Personal.NewAccount.SendRequestAsync("");
+        }
+       
+
+        public void BuildQuorumUserAddress()
+        {
+           var users = _quorumUserRepository.GetAll();
+            var nodes = _quorumNodeRepository.GetAll();
+           foreach(var user in users)
+            {
+                var node = nodes.ToList().Where(item => item.Id == user.QuorumNodeId).FirstOrDefault();
+                if(node != null && node.Uri !=null)
+                {
+                    var web3Quorum = new Web3Quorum(node.Uri);
+                    var accountAddress1 = asyncCreateAccount(web3Quorum).Result;
+                    user.AccountAddress = accountAddress1;
+                }
+                _quorumUserRepository.Add(user);
+            }
+            _dbContext.SaveChanges();
+        }
+
 
     }
 

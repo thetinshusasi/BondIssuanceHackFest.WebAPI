@@ -6,12 +6,24 @@ using System.Threading.Tasks;
 
 namespace BondIssuanceHackFest.DLL.Models
 {
+    public enum UserType
+    {
+        Admin,
+        Investor,
+        Issuer
+
+
+    }
     public class QuorumUser
     {
         public int Id { get; set; }
-        public string PrivateKey { get; set; }
+        public string Name { get; set; }
 
-        public string PublicKey { get; set; }
+        public string AccountAddress { get; set; }
+        public int  QuorumNodeId { get; set; }
+
+        public UserType UserType { get; set; }
+
 
 
 

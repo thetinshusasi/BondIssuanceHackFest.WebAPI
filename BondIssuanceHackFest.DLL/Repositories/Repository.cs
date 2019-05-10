@@ -11,7 +11,7 @@ namespace BondIssuanceHackFest.DLL.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly DbContext Context;
+        public readonly DbContext Context;
 
         public Repository(DbContext context)
         {

@@ -12,7 +12,7 @@ namespace BondIssuanceHackFest.DLL.Models
 
         public string Name { get; set; }
 
-        public string Address { get; set; }
+        public string Uri { get; set; }
 
         public string ConstellationPublicKey { get; set; }
 
