@@ -21,7 +21,7 @@ contract Models {
     struct Bid {
         address addr;
         uint bid_price;
-        Bond bonds;
+        address bond_id;
     }
     struct Investor {
         address addr;
@@ -29,5 +29,8 @@ contract Models {
         string investor_type;
         Wallet wallet;
         Bid[1000] bids;
+    }
+    struct BookRunner {
+        address addr;
     }
 }
