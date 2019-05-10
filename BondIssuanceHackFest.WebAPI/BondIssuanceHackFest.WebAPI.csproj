@@ -271,6 +271,7 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Contracts\Ballot.sol" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -298,6 +299,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Contracts\bin\Ballot-sol-output.json" />
+    <Content Include="Content\Contracts\bin\Wallets.abi" />
+    <Content Include="Content\Contracts\bin\Wallets.bin" />
+    <Content Include="Content\Contracts\bin\Wallets.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -345,6 +350,10 @@
     <ProjectReference Include="..\BondIssuanceHackFest.DLL\BondIssuanceHackFest.DLL.csproj">
       <Project>{0482085e-6527-45f6-83ad-2eca76c95818}</Project>
       <Name>BondIssuanceHackFest.DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BondIssuanceHackFest.Netherum\BondIssuanceHackFest.Netherum.csproj">
+      <Project>{1c1acd6f-30b5-4cc5-91ac-b31b6b4d1b04}</Project>
+      <Name>BondIssuanceHackFest.Netherum</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

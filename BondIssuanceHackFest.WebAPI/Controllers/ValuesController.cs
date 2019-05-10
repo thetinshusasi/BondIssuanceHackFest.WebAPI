@@ -1,4 +1,5 @@
 ﻿using BondIssuanceHackFest.DLL.IRepositories;
+using BondIssuanceHackFest.Netherum.QuorumAdapters;
 using BondIssuanceHackFest.WebAPI.BondIssuance.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace BondIssuanceHackFest.WebAPI.Controllers
         public IEnumerable<string> Get()
         {
             var data = new string[] { "value1", "value2" , _test.FullName };
+            var x = new QuorumConnector();
+            x.ConvertSolsToByteCodeStrings();
             var d = _bondRepository.GetAll();
             return data;
         }
