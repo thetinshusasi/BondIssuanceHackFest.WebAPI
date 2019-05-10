@@ -1,4 +1,3 @@
-
 pragma solidity >=0.4.22 <0.6.0;
 contract Wallets {
     address investor;
@@ -25,4 +24,3 @@ contract Wallets {
         return balances[addr];
     }
 }
-
