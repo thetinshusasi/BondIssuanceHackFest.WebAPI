@@ -16,7 +16,7 @@ namespace BondIssuanceHackFest.WebAPI.App_Start
     using BondIssuanceHackFest.WebAPI.BondIssuance.Interfaces;
     using BondIssuanceHackFest.WebAPI.Models;
     using Ninject.Web.Common.WebHost;
-    using BondIssuanceHackFest.DLL.DataModel;
+    using BondIssuanceHackFest.DLL.DataModels;
     using System.Data.Entity;
     using BondIssuanceHackFest.DLL.Repositories;
     using BondIssuanceHackFest.DLL.IRepositories;

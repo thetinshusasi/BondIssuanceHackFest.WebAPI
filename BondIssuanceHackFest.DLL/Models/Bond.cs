@@ -11,5 +11,19 @@ namespace BondIssuanceHackFest.DLL.DataModels
         public int Id { get; set; }
         public string Name { get; set; }
 
+        public DateTime MaturityDate { get; set; }
+
+        public int LotSize { get; set; }
+
+        public int MinPrice { get; set; }
+
+        public int MaxPrice { get; set; }
+
+        public int CouponFrequency { get; set; }
+
+        public int LotsToAllocate { get; set; }
+
+
+
     }
 }

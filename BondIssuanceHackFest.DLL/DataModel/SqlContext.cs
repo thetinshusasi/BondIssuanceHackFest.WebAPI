@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BondIssuanceHackFest.DLL.DataModel
+namespace BondIssuanceHackFest.DLL.DataModels
 {
     public class SqlContext : DbContext
     {
