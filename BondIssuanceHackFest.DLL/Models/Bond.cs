@@ -23,6 +23,8 @@ namespace BondIssuanceHackFest.DLL.DataModels
 
         public int LotsToAllocate { get; set; }
 
+        public IList<Investor> Inverstors { get; set; }
+
 
 
     }

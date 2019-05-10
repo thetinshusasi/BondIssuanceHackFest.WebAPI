@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BondIssuanceHackFest.DLL.DataModels
 {
-    class Wallet
+  public  class Wallet
     {
         public int Id { get; set; }
 

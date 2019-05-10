@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BondIssuanceHackFest.DLL.DataModels
 {
-    enum InvesterType
+   public enum InvesterType
     {
         FundManager,
         HedgeFund,
@@ -15,15 +15,17 @@ namespace BondIssuanceHackFest.DLL.DataModels
 
 
     }
-    class Investor
+    public class Investor
     {
         public int Id { get; set; }
 
-        public InvesterType InvesterType { get; set; }
+        public string InvesterType { get; set; }
 
         public Wallet Wallet { get; set; }
 
-        public IList<Bond> Bonds { get; set; }
+        public Bond Bond { get; set; }
+
+        public  IList<Bid> Bids { get; set; }
 
 
     }

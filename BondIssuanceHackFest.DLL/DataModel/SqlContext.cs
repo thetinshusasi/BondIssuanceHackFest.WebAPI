@@ -16,5 +16,11 @@ namespace BondIssuanceHackFest.DLL.DataModels
         }
         
         public DbSet<Bond> Bonds { get; set; }
+
+        public DbSet<Bid> Bids { get; set; }
+
+        public DbSet<Wallet> Wallets { get; set; }
+
+        public DbSet<Investor> Investors { get; set; }
     }
 }

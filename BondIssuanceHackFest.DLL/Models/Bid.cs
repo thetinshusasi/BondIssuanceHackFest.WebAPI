@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BondIssuanceHackFest.DLL.DataModels
 {
-    class Bid
+   public class Bid
     {
         public int Id { get; set; }
 
-        public  Bond Bond { get; set; }
+        public Bond Bond { get; set; }
 
         public int NoOfLots { get; set; }
 
