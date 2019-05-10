@@ -1,0 +1,23 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "get_investor_type",
+            "outputs": [
+                {
+                    "name": "invs_type",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "bytecode": "",
+    "functionHashes": {
+        "get_investor_type()": "8e2dcee7"
+    },
+    "gasEstimates": null
+}
