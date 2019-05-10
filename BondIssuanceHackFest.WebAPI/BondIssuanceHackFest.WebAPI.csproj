@@ -305,6 +305,7 @@
     <Content Include="Content\Contracts\bin\Wallets.abi" />
     <Content Include="Content\Contracts\bin\Wallets.bin" />
     <Content Include="Content\Contracts\bin\Wallets.json" />
+    <None Include="Properties\PublishProfiles\BondIssuanceHackFest - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
