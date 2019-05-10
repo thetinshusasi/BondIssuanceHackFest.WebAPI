@@ -260,7 +260,6 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="BondIssuance.Interfaces\ITest.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IIBondRepository.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -301,11 +300,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Contracts\bin\Ballot-sol-output.json" />
     <Content Include="Content\Contracts\bin\Wallets.abi" />
     <Content Include="Content\Contracts\bin\Wallets.bin" />
     <Content Include="Content\Contracts\bin\Wallets.json" />
-    <Content Include="Ballot-sol-output.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
