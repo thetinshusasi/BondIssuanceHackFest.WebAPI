@@ -273,7 +273,7 @@
     <Content Include="ConnectionString.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Contracts\Ballot.sol" />
+    <Content Include="Content\Contracts\Wallets.sol" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -306,6 +306,10 @@
     <Content Include="Content\Contracts\bin\Wallets.bin" />
     <Content Include="Content\Contracts\bin\Wallets.json" />
     <Content Include="Ballot-sol-output.json" />
+    <Content Include="Content\Contracts\Wallets-sol-output.json" />
+    <Content Include="Content\Contracts\Wallets.abi" />
+    <Content Include="Content\Contracts\Wallets.bin" />
+    <Content Include="Content\Contracts\Wallets.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
