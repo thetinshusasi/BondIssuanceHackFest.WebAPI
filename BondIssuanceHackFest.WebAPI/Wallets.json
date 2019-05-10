@@ -1,0 +1,103 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "addr",
+                    "type": "address"
+                }
+            ],
+            "name": "query_balance",
+            "outputs": [
+                {
+                    "name": "balance",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "name": "bal",
+                    "type": "uint256"
+                }
+            ],
+            "name": "add_balance",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "pay",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "name": "coupon_amt",
+                    "type": "uint256"
+                }
+            ],
+            "name": "add_coupon",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        }
+    ],
+    "bytecode": "608060405234801561001057600080fd5b50600080546001600160a01b031916331790556101db806100326000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80630657a9471461005157806330dc9cee14610089578063c4076876146100b7578063e8936f92146100e3575b600080fd5b6100776004803603602081101561006757600080fd5b50356001600160a01b031661010f565b60408051918252519081900360200190f35b6100b56004803603604081101561009f57600080fd5b506001600160a01b03813516906020013561012a565b005b6100b5600480360360408110156100cd57600080fd5b506001600160a01b038135169060200135610164565b6100b5600480360360408110156100f957600080fd5b506001600160a01b038135169060200135610141565b6001600160a01b031660009081526001602052604090205490565b6000546001600160a01b0316331461014157610160565b6001600160a01b03821660009081526001602052604090208054820190555b5050565b3360009081526001602052604090205481111561018057610160565b33600090815260016020526040808220805484900390556001600160a01b03841682529020805482019055505056fea165627a7a723058207bf28c753bc0b81d534cc360bf0d5ca7e29bfe7d37358f170a854cb119125cd50029",
+    "functionHashes": {
+        "add_balance(address,uint256)": "30dc9cee",
+        "add_coupon(address,uint256)": "e8936f92",
+        "pay(address,uint256)": "c4076876",
+        "query_balance(address)": "0657a947"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "95000",
+            "executionCost": "20376",
+            "totalCost": "115376"
+        },
+        "external": {
+            "add_balance(address,uint256)": "20766",
+            "add_coupon(address,uint256)": "20570",
+            "pay(address,uint256)": "41112",
+            "query_balance(address)": "520"
+        }
+    }
+}

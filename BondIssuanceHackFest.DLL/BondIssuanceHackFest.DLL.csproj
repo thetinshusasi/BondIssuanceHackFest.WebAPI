@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="DataModel\SqlContext.cs" />
     <Compile Include="IRepositories\IBondRepository.cs" />
+    <Compile Include="IRepositories\IContractRepository.cs" />
+    <Compile Include="IRepositories\IQuorumNodeRepository.cs" />
     <Compile Include="IRepositories\IQuorumUserRepository.cs" />
     <Compile Include="Migrations\201905092353453_Intial.cs" />
     <Compile Include="Migrations\201905092353453_Intial.Designer.cs">
@@ -62,16 +64,27 @@
     <Compile Include="Migrations\201905101507115_10-5-2019-1.Designer.cs">
       <DependentUpon>201905101507115_10-5-2019-1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905101630209_10-05-2019-2.cs" />
+    <Compile Include="Migrations\201905101630209_10-05-2019-2.Designer.cs">
+      <DependentUpon>201905101630209_10-05-2019-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905101645586_10-05-2019-4.cs" />
+    <Compile Include="Migrations\201905101645586_10-05-2019-4.Designer.cs">
+      <DependentUpon>201905101645586_10-05-2019-4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bid.cs" />
     <Compile Include="Models\Bond.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="Models\Contract.cs" />
     <Compile Include="Models\Investor.cs" />
+    <Compile Include="Models\QuorumNode.cs" />
     <Compile Include="Models\QuorumUser.cs" />
     <Compile Include="Models\Wallet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BondRepository.cs" />
+    <Compile Include="Repositories\ContractRepository.cs" />
+    <Compile Include="Repositories\QuorumNodeRepository.cs" />
     <Compile Include="Repositories\QuorumUserRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>
@@ -88,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905101507115_10-5-2019-1.resx">
       <DependentUpon>201905101507115_10-5-2019-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905101630209_10-05-2019-2.resx">
+      <DependentUpon>201905101630209_10-05-2019-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905101645586_10-05-2019-4.resx">
+      <DependentUpon>201905101645586_10-05-2019-4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
