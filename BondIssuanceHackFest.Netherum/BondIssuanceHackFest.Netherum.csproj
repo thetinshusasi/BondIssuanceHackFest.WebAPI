@@ -96,15 +96,8 @@
     <Compile Include="QuorumAdapters\StandardTokenDeployment.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Contracts\bin\Ballot-sol-output.json" />
-    <None Include="Contracts\bin\Wallets.abi" />
-    <None Include="Contracts\bin\Wallets.bin" />
-    <None Include="Contracts\bin\Wallets.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="Contracts\Ballot.sol" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
