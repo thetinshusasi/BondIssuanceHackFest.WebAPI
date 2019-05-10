@@ -54,8 +54,11 @@
       <DependentUpon>201905092353453_Intial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Bid.cs" />
     <Compile Include="Models\Bond.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="Models\Investor.cs" />
+    <Compile Include="Models\Wallet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BondRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
