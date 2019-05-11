@@ -1,0 +1,18 @@
+SET IDENTITY_INSERT [dbo].[QuorumNodes] ON
+INSERT INTO [dbo].[QuorumNodes] ([Id], [Name], [Uri], [ConstellationPublicKey]) VALUES (1, N'AdminNode', N'https://admin.blockchain.azure.com:3200/qooS80gVF1vTSoDC9URbJ0ID', N'YSCujcwMuhJ2ZnuV8uue/a0j6V/8mTdZERZRdYqFulo=')
+INSERT INTO [dbo].[QuorumNodes] ([Id], [Name], [Uri], [ConstellationPublicKey]) VALUES (2, N'Investor1Node', N'https://investor1-admin.blockchain.azure.com:3200/CjdhJe-F1mVHziXoe8okJRZG', N'hsl72BXxBIbHin1qgHU4XTs8W1Bor3QPQwPYHmzwABM=')
+INSERT INTO [dbo].[QuorumNodes] ([Id], [Name], [Uri], [ConstellationPublicKey]) VALUES (3, N'Investor2Node', N'https://investor2-admin.blockchain.azure.com:3200/AMrfRa-K_HiFKaGd7QdeTJ8Z', N'Vbx9WIE0pbdoI9p5MKRKFiPKFORZwTZ+CTQrHOBH1HU=')
+INSERT INTO [dbo].[QuorumNodes] ([Id], [Name], [Uri], [ConstellationPublicKey]) VALUES (4, N'IssuerNode', N'https://investor3-admin.blockchain.azure.com:3200/fiLU5BgA8_L_-HGW2I5iVRHo', N'WUk4eMWVDJ0YlYfWH++cuctbLvB0PHZTVObsdgddO3k=')
+SET IDENTITY_INSERT [dbo].[QuorumNodes] OFF
+
+
+
+
+
+
+SET IDENTITY_INSERT [dbo].[QuorumUsers] ON
+INSERT INTO [dbo].[QuorumUsers] ([Id], [Name], [AccountAddress], [QuorumNodeId], [UserType]) VALUES (3, N'Admin', NULL, 1, 1)
+INSERT INTO [dbo].[QuorumUsers] ([Id], [Name], [AccountAddress], [QuorumNodeId], [UserType]) VALUES (4, N'Investor1', N'', 2, 2)
+INSERT INTO [dbo].[QuorumUsers] ([Id], [Name], [AccountAddress], [QuorumNodeId], [UserType]) VALUES (5, N'Investor2', NULL, 3, 2)
+INSERT INTO [dbo].[QuorumUsers] ([Id], [Name], [AccountAddress], [QuorumNodeId], [UserType]) VALUES (6, N'Issuer', NULL, 4, 3)
+SET IDENTITY_INSERT [dbo].[QuorumUsers] OFF
