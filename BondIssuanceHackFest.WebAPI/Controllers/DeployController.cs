@@ -72,7 +72,7 @@ namespace BondIssuanceHackFest.WebAPI.Controllers
         // PUT api/values/5
 
         [HttpPost]
-        [Route(Name ="DeployContract")]
+        [Route("DeployContract")]
         public IHttpActionResult DeployContracts()
         {
             var user = _quorumUserRepository.GetAll().Where(item=>item.UserType == UserType.Admin).FirstOrDefault();
