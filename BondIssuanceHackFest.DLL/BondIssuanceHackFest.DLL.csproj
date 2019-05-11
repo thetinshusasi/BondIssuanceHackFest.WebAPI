@@ -104,13 +104,9 @@
     <Compile Include="IRepositories\IContractRepository.cs" />
     <Compile Include="IRepositories\IQuorumNodeRepository.cs" />
     <Compile Include="IRepositories\IQuorumUserRepository.cs" />
-    <Compile Include="Migrations\201905102221062_11-05-2019-2.cs" />
-    <Compile Include="Migrations\201905102221062_11-05-2019-2.Designer.cs">
-      <DependentUpon>201905102221062_11-05-2019-2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905102235582_11-05-2019-3.cs" />
-    <Compile Include="Migrations\201905102235582_11-05-2019-3.Designer.cs">
-      <DependentUpon>201905102235582_11-05-2019-3.cs</DependentUpon>
+    <Compile Include="Migrations\201905110041597_first.cs" />
+    <Compile Include="Migrations\201905110041597_first.Designer.cs">
+      <DependentUpon>201905110041597_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201905110122148_11-05-2019-4.cs" />
     <Compile Include="Migrations\201905110122148_11-05-2019-4.Designer.cs">
@@ -137,11 +133,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905102221062_11-05-2019-2.resx">
-      <DependentUpon>201905102221062_11-05-2019-2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905102235582_11-05-2019-3.resx">
-      <DependentUpon>201905102235582_11-05-2019-3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905110041597_first.resx">
+      <DependentUpon>201905110041597_first.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905110122148_11-05-2019-4.resx">
       <DependentUpon>201905110122148_11-05-2019-4.cs</DependentUpon>

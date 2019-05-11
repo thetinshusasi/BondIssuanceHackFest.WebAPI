@@ -3,12 +3,12 @@ namespace BondIssuanceHackFest.DLL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _110520192 : DbMigration
+    public partial class first : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Bids", 
+                "dbo.Bids",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -56,6 +56,7 @@ namespace BondIssuanceHackFest.DLL.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         Address = c.String(),
+                        ByteCode = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

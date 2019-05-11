@@ -7,13 +7,13 @@ namespace BondIssuanceHackFest.DLL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class _110520193 : IMigrationMetadata
+    public sealed partial class first : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_110520193));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
         
         string IMigrationMetadata.Id
         {
-            get { return "201905102235582_11-05-2019-3"; }
+            get { return "201905110041597_first"; }
         }
         
         string IMigrationMetadata.Source
