@@ -49,4 +49,24 @@ namespace BondIssuanceHackFest.WebAPI.Controllers
         public virtual int Bond_Total_Lots { get; set; }
 
     }
+
+    [Function("bid")]
+    public class ExecuteBid : FunctionMessage
+    {
+        [Parameter("address", "bond_id", 1)]
+        public virtual string Bond_Id { get; set; }
+        [Parameter("uint256", "bid_min_price", 2)]
+        public virtual int Bid_Min_Price { get; set; }
+        [Parameter("uint256", "bid_max_price", 3)]
+        public virtual int Bid_Max_Price { get; set; }
+        [Parameter("uint256", "lots_bid", 4)]
+        public virtual int Lots_Bid { get; set; }
+    }
+
+    [Function("get_invester_bid", "Document1")]
+    public class BidValueForNodeFunction : FunctionMessage
+    {
+        [Parameter("address", "_investor", 1)]
+        public virtual string InvestoAddress { get; set; }
+    }
 }
