@@ -19,6 +19,7 @@ using System.IO;
 using BondIssuanceHackFest.DLL.IRepositories;
 using System.Linq;
 using System.Data.Entity;
+using BondIssuanceHackFest.DLL.DataModels;
 
 namespace BondIssuanceHackFest.Netherum.QuorumAdapters
 {
@@ -36,13 +37,17 @@ namespace BondIssuanceHackFest.Netherum.QuorumAdapters
             _quorumNodeRepository = quorumNodeRepository;
             _dbContext = dbContext;
         }
+
+        public object SqlDbContext { get; private set; }
+
         public static async Task<string> asyncCreateAccount(Web3Quorum web3Private)
         {
             return await web3Private.Personal.NewAccount.SendRequestAsync("");
         }
-       
 
-        public void BuildQuorumUserAddress()
+        SqlContext db = new SqlContext();
+
+        public async Task<int> BuildQuorumUserAddress()
         {
            var users = _quorumUserRepository.GetAll();
             var nodes = _quorumNodeRepository.GetAll();
@@ -52,12 +57,16 @@ namespace BondIssuanceHackFest.Netherum.QuorumAdapters
                 if(node != null && node.Uri !=null)
                 {
                     var web3Quorum = new Web3Quorum(node.Uri);
-                    var accountAddress1 = asyncCreateAccount(web3Quorum).Result;
+                    var accountAddress1 = await asyncCreateAccount(web3Quorum);
                     user.AccountAddress = accountAddress1;
                 }
-                _quorumUserRepository.Add(user);
+                //_quorumUserRepository.Add(user);
+                //db.QuorumUsers.Add(user);
+
             }
-            _dbContext.SaveChanges();
+            //int i=_dbContext.SaveChanges();
+            int i = 0; //db.SaveChanges();
+            return i;
         }
 
 

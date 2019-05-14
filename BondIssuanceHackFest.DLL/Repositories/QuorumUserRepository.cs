@@ -9,7 +9,7 @@ using System.Data.Entity;
 
 namespace BondIssuanceHackFest.DLL.Repositories
 {
-    class QuorumUserRepository : Repository<QuorumUser>, IQuorumUserRepository
+   public class QuorumUserRepository : Repository<QuorumUser>, IQuorumUserRepository
     {
         public QuorumUserRepository(DbContext context) : base(context)
         {

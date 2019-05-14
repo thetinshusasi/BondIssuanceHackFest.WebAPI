@@ -3,7 +3,7 @@ namespace BondIssuanceHackFest.DLL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _110520194 : DbMigration
+    public partial class s : DbMigration
     {
         public override void Up()
         {

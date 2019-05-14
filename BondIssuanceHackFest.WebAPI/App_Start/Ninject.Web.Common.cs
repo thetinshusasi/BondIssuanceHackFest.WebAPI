@@ -18,8 +18,8 @@ namespace BondIssuanceHackFest.WebAPI.App_Start
     using Ninject.Web.Common.WebHost;
     using BondIssuanceHackFest.DLL.DataModels;
     using System.Data.Entity;
-    using BondIssuanceHackFest.DLL.Repositories;
     using BondIssuanceHackFest.DLL.IRepositories;
+    using BondIssuanceHackFest.DLL.Repositories;
 
     public static class NinjectWebCommon
     {
@@ -71,9 +71,14 @@ namespace BondIssuanceHackFest.WebAPI.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<ITest>().To<Test>();
-            kernel.Bind<System.Data.Entity.DbContext>().To<SqlContext>();
             kernel.Bind<IBondRepository>().To<BondRepository>();
+            kernel.Bind<IQuorumUserRepository>().To<QuorumUserRepository>();
+            kernel.Bind<IQuorumNodeRepository>().To<QuorumNodeRepository>();
+            kernel.Bind<IContractRepository>().To<ContractRepository>();
+            kernel.Bind<System.Data.Entity.DbContext>().To<SqlContext>();
+           
+            //kernel.Bind<IBondRepository>().To/*<*/QuorumUserRepository>();
+
 
         }
     }
